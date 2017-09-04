@@ -24,6 +24,11 @@ describe( 'Calculator', () => {
   it( 'divides 10 by 2', () => {
     expect( calculator.divide( 10, 2 ) ).to.equal( 5 );
   });
+  /*
+   Originally this test tried to directly compare NaN === NaN.
+   The Chai to.be.NaN properly tests if something is NaN,
+   so it was changed to utilize that functionality
+  */
   it( 'does not divide by 0', () => {
     expect( calculator.divide( 5, 0 ) ).to.be.NaN;
   });
