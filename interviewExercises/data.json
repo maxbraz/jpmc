@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Speedway",
+    "street": "770 Polaris Pkwy",
+    "city": "Lewis Center",
+    "state": "OH",
+    "zipcode": 43035,
+    "latitude": 40.151287,
+    "longitude": -82.997928
+  },
+  {
+    "id": 2,
+    "name": "Polaris",
+    "street": "1121 Polaris Pkwy",
+    "city": "Columbus",
+    "state": "OH",
+    "zipcode": 43240,
+    "latitude": 40.143923,
+    "longitude": -82.991370
+  },
+  {
+    "id": 3,
+    "name": "Kroger Polaris",
+    "street": "1177 Polaris Pkwy",
+    "city": "Columbus",
+    "state": "OH",
+    "zipcode": 43240,
+    "latitude": 40.140108,
+    "longitude": -82.990315
+  },
+  {
+    "id": 4,
+    "name": "Speedway",
+    "street": "10330 N High St",
+    "city": "Lewis Center",
+    "state": "OH",
+    "zipcode": 43035,
+    "latitude": 40.137556,
+    "longitude": -83.017619
+  },
+  {
+    "id": 5,
+    "name": "Lewis Center",
+    "street": "8681 Columbus Pike",
+    "city": "Lewis Center",
+    "state": "OH",
+    "zipcode": 43035,
+    "latitude": 40.162896,
+    "longitude": -83.018605
+  }
+]
