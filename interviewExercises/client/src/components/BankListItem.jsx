@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 const BankListItem = ({bank}) => (
   <li>
-    {bank.bankName}
+    {`${bank.name} ${bank.street} ${bank.city} ${bank.state} ${bank.zipcode}`}
   </li>
 )
 
