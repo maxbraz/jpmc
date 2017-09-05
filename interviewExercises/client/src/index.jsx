@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 import Search from './components/Search.jsx';
 import BankList from './components/BankList.jsx';
+import testData from '../../data.json';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      banks: []
+      banks: testData
     }
     this.fetch = this.fetch.bind(this);
     this.search = this.search.bind(this);
