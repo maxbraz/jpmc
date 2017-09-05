@@ -18,6 +18,10 @@ let bankSchema = mongoose.Schema({
   city: String,
   state: String,
   zipcode: Number,
+  loc: {
+    type: [Number],
+    index: '2d'
+  },
   latitude: Number,
   longitude: Number,
 });
