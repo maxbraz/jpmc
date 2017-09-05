@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/fetcher');
+mongoose.connect('mongodb://localhost/jpmc', {
+  useMongoClient: true,
+});
 
 let db = mongoose.connection;
 
@@ -10,12 +12,14 @@ db.once('open', function() {
 });
 
 let bankSchema = mongoose.Schema({
-  Id: { type: Number, unique: true },
-  Name: String,
-  Street: String,
-  City: String,
-  State: String,
-  Zipcode: Number,
+  id: { type: Number, unique: true },
+  name: String,
+  street: String,
+  city: String,
+  state: String,
+  zipcode: Number,
+  latitude: Number,
+  longitude: Number,
 });
 
 let Bank = mongoose.model('Bank', bankSchema);
