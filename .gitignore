@@ -20,3 +20,6 @@ WiredTiger.lock
 WiredTiger.turtle
 WiredTiger.wt
 WiredTigerLAS.wt
+interviewExercises/db/sizeStorer.wt
+interviewExercises/db/diagnostic.data/metrics.interim
+interviewExercises/db/diagnostic.data/metrics.2017-09-05T16-36-18Z-00000
