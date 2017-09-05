@@ -6,6 +6,7 @@
     "city": "Lewis Center",
     "state": "OH",
     "zipcode": 43035,
+    "loc":  [-82.997928, 40.151287],
     "latitude": 40.151287,
     "longitude": -82.997928
   },
@@ -16,6 +17,7 @@
     "city": "Columbus",
     "state": "OH",
     "zipcode": 43240,
+    "loc":  [-82.991370, 40.143923],
     "latitude": 40.143923,
     "longitude": -82.991370
   },
@@ -26,6 +28,7 @@
     "city": "Columbus",
     "state": "OH",
     "zipcode": 43240,
+    "loc":  [-82.990315, 40.140108],
     "latitude": 40.140108,
     "longitude": -82.990315
   },
@@ -36,6 +39,7 @@
     "city": "Lewis Center",
     "state": "OH",
     "zipcode": 43035,
+    "loc":  [-83.017619, 40.137556],
     "latitude": 40.137556,
     "longitude": -83.017619
   },
@@ -46,6 +50,7 @@
     "city": "Lewis Center",
     "state": "OH",
     "zipcode": 43035,
+    "loc":  [-83.018605, 40.162896],
     "latitude": 40.162896,
     "longitude": -83.018605
   }

@@ -18,5 +18,4 @@ for (let bank of banks) {
       console.log('successfully seeded bank');
     }
   });
-  counter++;
 }
