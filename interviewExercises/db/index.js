@@ -19,13 +19,22 @@ let bankSchema = mongoose.Schema({
   state: String,
   zipcode: Number,
   loc: {
-    type: [Number],
-    index: '2d'
+    'type': {
+      type: String,
+      enum: 'Point',
+      default: 'Point'
+    },
+    coordinates: {
+      type: [Number],
+      default: [-82.997928, 40.151287],
+      index: '2dsphere'
+    }
   },
   latitude: Number,
   longitude: Number,
 });
 
+// bankSchema.index({loc: '2dsphere'});
 let Bank = mongoose.model('Bank', bankSchema);
 
 module.exports = Bank;
