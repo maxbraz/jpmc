@@ -5,6 +5,7 @@ const Banks = require('../db/index.js');
 
 const app = express();
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, './../client/dist')));
 
 app.get('/banks', (req, res) => {
   Banks.find({}).limit(5).exec( (err, banks) => {
