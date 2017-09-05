@@ -25,6 +25,7 @@
     "express": "^4.15.4",
     "mongodb": "^2.2.31",
     "mongoose": "^4.11.10",
+    "parse-address": "0.0.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "zipcodes": "^4.1.0"
