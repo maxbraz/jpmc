@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const parser = require('parse-address');
 const zipcodes = require('zipcodes');
 const Banks = require('../db/index.js');
+const findLocation = require('./middleware/findLocation.js');
 
 const app = express();
 app.use(bodyParser.json());
@@ -21,14 +22,35 @@ app.post('/address', (req, res) => {
 });
 
 app.get('/banks', (req, res) => {
-  Banks.find({}).limit(5).exec( (err, banks) => {
-    if (err) {
-      console.log( 'server get request failure', err);
-    } else {
-      console.log('Success!');
+  let limit = req.query.limit || 5;
+
+  let maxDistance = req.query.distance || 7;
+  maxDistance /= 6371;
+
+  let coordinates = [];
+  coordinates[0] = req.query.longitude || 0;
+  coords[1] = req.query.latitude || 0;
+
+  Bank.find({
+    loc: {
+      $near: coordinates,
+      $maxDistance: maxDistance,
     }
-    res.end(JSON.stringify(banks));
+  }).limit(limit).exec(function(err, locations) {
+    if (err) {
+      return res.json(500, err);
+    }
+
+    res.json(200, locations);
   });
+  // Banks.find({}).limit(5).exec( (err, banks) => {
+  //   if (err) {
+  //     console.log( 'server get request failure', err);
+  //   } else {
+  //     console.log('Success!');
+  //   }
+  //   res.end(JSON.stringify(banks));
+  // });
 });
 
 const port = process.env.PORT || 5000;
